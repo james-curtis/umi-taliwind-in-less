@@ -6,29 +6,9 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
-  layout: {
-    title: '@umijs/max',
-  },
-  routes: [
-    {
-      path: '/',
-      redirect: '/home',
-    },
-    {
-      name: '首页',
-      path: '/home',
-      component: './Home',
-    },
-    {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
-    },
-    {
-      name: ' CRUD 示例',
-      path: '/table',
-      component: './Table',
-    },
-  ],
   npmClient: 'pnpm',
+  plugins: [require.resolve('@umijs/plugins/dist/unocss')],
+  unocss: {
+    watch: ['pages/**.tsx'], // 添加其他包含 unocss 的 classname 的文件目录
+  },
 });
