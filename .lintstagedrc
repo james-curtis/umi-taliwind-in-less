@@ -8,7 +8,7 @@
   ],
   "*.{css,less}": [
     "max lint --fix --stylelint-only",
-    "prettier --cache --write"
+    "prettier -c"
   ],
   "*.ts?(x)": [
     "max lint --fix --eslint-only",
