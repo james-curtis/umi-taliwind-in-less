@@ -7,7 +7,6 @@
     "prettier --cache --write"
   ],
   "*.{css,less}": [
-    "max lint --fix",
     "prettier -c"
   ],
   "*.ts?(x)": [
