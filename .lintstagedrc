@@ -10,7 +10,7 @@
     "prettier -c"
   ],
   "*.ts?(x)": [
-    "max lint --fix",
+    "max lint",
     "prettier --cache --parser=typescript --write"
   ]
 }
